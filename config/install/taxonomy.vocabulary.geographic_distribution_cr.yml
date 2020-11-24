@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+name: 'Provincia canton distrito'
+vid: geographic_distribution_cr
+description: ''
+weight: 0

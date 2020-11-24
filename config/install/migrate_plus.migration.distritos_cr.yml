@@ -1,0 +1,33 @@
+id: distritos_cr
+label: Imports Distritos of CR.
+migration_dependencies:
+  required:
+    - cantones_cr
+source:
+  plugin: csv
+  path: modules/custom/manati_cr_geo_distribution_migration/data/distritos.csv
+  header_row_count: 1
+  delimiter: ','
+  ids:
+    - codigo
+
+destination:
+  plugin: entity:taxonomy_term
+
+
+process:
+  vid:
+    plugin: default_value
+    default_value: geographic_distribution_cr
+  name: nombre
+  uid:
+    plugin: default_value
+    default_value: 1
+  parent:
+    -
+      plugin: migration_lookup
+      migration: cantones_cr
+      source: canton
+    -
+      plugin: default_value
+      default_value: 0

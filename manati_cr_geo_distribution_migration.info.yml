@@ -1,0 +1,18 @@
+name: Manati CR geo distribution
+type: module
+description: This module provides a migration of the geopolitcal distribution of cr.
+package: MANATI
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - migrate
+  - migrate_source_csv
+  - migrate_plus
+  - migrate_tools
+  - config_devel
+config_devel:
+  install:
+  - migrate_plus.migration.provincias_cr
+  - migrate_plus.migration.cantones_cr
+  - migrate_plus.migration.distritos_cr
+

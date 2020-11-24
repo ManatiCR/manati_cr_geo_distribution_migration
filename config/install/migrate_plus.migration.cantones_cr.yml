@@ -1,0 +1,33 @@
+id: cantones_cr
+label: Imports Cantones of CR.
+migration_dependencies:
+  required:
+    - provincias_cr
+source:
+  plugin: csv
+  path: modules/custom/manati_cr_geo_distribution_migration/data/cantones.csv
+  header_row_count: 1
+  delimiter: ','
+  ids:
+    - codigo
+
+destination:
+  plugin: entity:taxonomy_term
+
+
+process:
+  vid:
+    plugin: default_value
+    default_value: geographic_distribution_cr
+  name: nombre
+  uid:
+    plugin: default_value
+    default_value: 1
+  parent:
+    -
+      plugin: migration_lookup
+      migration: provincias_cr
+      source: provincia
+    -
+      plugin: default_value
+      default_value: 0

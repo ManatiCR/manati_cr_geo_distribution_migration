@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Implements hook_uninstall().
+ */
+function manati_cr_geo_distribution_migration_uninstall() {
+  db_query("DELETE FROM {config} WHERE name = 'migrate_plus.migration.cantones_cr'");
+  db_query("DELETE FROM {config} WHERE name = 'migrate_plus.migration.distritos_cr'");
+  db_query("DELETE FROM {config} WHERE name = 'migrate_plus.migration.provincias_cr'");
+  drupal_flush_all_caches();
+}
