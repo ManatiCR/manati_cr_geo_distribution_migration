@@ -1,13 +1,16 @@
 {
-  "name": "manaticr/manati_cr_geo_distribution_migration",
+  "name": "manaticr/manati-cr-geo-distribution-migration",
   "type": "drupal-module",
   "description": "Provides the Costa Rican Geographic dristribution for drupal 8.",
-  "license": "GPL-2.0+",
+  "license": "GPL-2.0-or-later",
   "authors": [
+    {
+      "name": "Manati",
+      "email": "info@estudiomanati.com"
+    },
     {
       "name": "Rodrigo Espinoza Brenes",
       "email": "espinoza.brenes.rodrigo@gmail.com",
-      "homepage": "https://github.com/ManatiCR/manati_cr_geo_distribution_migration"
     }
   ],
   "require": {
