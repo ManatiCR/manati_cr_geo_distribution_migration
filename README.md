@@ -2,10 +2,10 @@
 Provides the Costa Rican Geographic dristribution for drupal 8
 
 ## Dependencies
-migrate_source_csv: "^3.4"
-drupal/migrate_plus: "^5.1"
-drupal/migrate_tools: "^5.0"
-drupal/config_devel: "^1.8"
+migrate_source_csv: "^3.4"</br>
+drupal/migrate_plus: "^5.1"</br>
+drupal/migrate_tools: "^5.0"</br>
+drupal/config_devel: "^1.8"</br>
 
 ## How to install
 If you clone this repo you need to insall all dependencies with composer.
