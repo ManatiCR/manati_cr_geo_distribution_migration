@@ -2,7 +2,7 @@ id: provincias_cr
 label: Imports Provincias of CR.
 source:
   plugin: csv
-  path: modules/custom/manati_cr_geo_distribution_migration/data/provincia.csv
+  path: modules/contrib/manati-cr-geo-distribution-migration/data/provincia.csv
   header_row_count: 1
   delimiter: ','
   ids:

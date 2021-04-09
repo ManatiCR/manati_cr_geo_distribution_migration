@@ -5,7 +5,7 @@ migration_dependencies:
     - provincias_cr
 source:
   plugin: csv
-  path: modules/custom/manati_cr_geo_distribution_migration/data/cantones.csv
+  path: modules/contrib/manati-cr-geo-distribution-migration/data/cantones.csv
   header_row_count: 1
   delimiter: ','
   ids:

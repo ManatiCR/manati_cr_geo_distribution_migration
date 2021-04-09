@@ -5,7 +5,7 @@ migration_dependencies:
     - cantones_cr
 source:
   plugin: csv
-  path: modules/custom/manati_cr_geo_distribution_migration/data/distritos.csv
+  path: modules/contrib/manati-cr-geo-distribution-migration/data/distritos.csv
   header_row_count: 1
   delimiter: ','
   ids:
